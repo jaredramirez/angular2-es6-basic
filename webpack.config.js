@@ -1,20 +1,21 @@
-var path = require('path');
-var webpack = require('webpack');
-
 module.exports = {
-    entry: {},
+    entry: './app/main.js',
     output: {
-        path: path.resolve(__dirname, 'build/'),
-        filename: '[name].bundle.js'
+        path: __dirname + '/build',
+        filename: 'app.bundle.js'
     },
     module: {
         loaders: [
             {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'angular2']
-                }
+              test: /\.js$/,
+              loader: 'babel-loader',
+              query: {
+                  presets: ['es2015', 'angular2']
+              }
+            },
+            {
+              test: /\.html$/,
+              loader: 'raw'
             }
         ]
     },
