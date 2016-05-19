@@ -4,7 +4,7 @@ import gutil from 'gulp-util';
 
 const webpack = (cb) => {
     const config = require('./webpack.config');
-    config.entry.app = './app/app.component.js';
+    config.entry.app = './app/main.js';
 
     webpackConst(config, (err, stats) => {
         if(err)  {
