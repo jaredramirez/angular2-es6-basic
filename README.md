@@ -1,0 +1,1 @@
+# angular2-es6-seed
