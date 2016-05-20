@@ -1,4 +1,4 @@
-# angular2-es6-seed
+# angular2-es6-basic
 
 A basic project setting up an angular2 application with ES6, babel, and webpack.
 
