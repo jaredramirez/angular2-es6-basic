@@ -1,6 +1,6 @@
 # angular2-es6-basic
 
-A basic project setting up an angular2 application with ES6, babel, and webpack. Implements basic angular2-material for styling.
+A basic example project setting up an angular2 application with ES6, babel, and webpack. Implements basic angular2-material for styling.
 
 ## getting started
 
