@@ -12,10 +12,10 @@ import About from './about/about.component';
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  {name: 'Home', path: '/app/home', component: Home},
-  {name: 'About', path: '/app/about', component: About}
+  {name: 'Home', path: '/home', component: Home, },
+  {name: 'About', path: '/about', component: About},
+  {path: '/**', redirectTo: ['Home'] }
 ])
-
 export default class AppComponent implements OnInit {
   constructor() {}
 

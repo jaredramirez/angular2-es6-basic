@@ -1,12 +1,10 @@
 import './shim';
 import { bootstrap } from '@angular/platform-browser-dynamic';
-import { provide } from '@angular/core'
-import {ROUTER_PROVIDERS, PLATFORM_DIRECTIVES, ROUTER_DIRECTIVES} from '@angular/router-deprecated'
+import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {LocationStrategy, PathLocationStrategy} from '@angular/common';
 import AppComponent from './components/app.component';
 
-bootstrap(AppComponent,
-  [
-    ROUTER_PROVIDERS/*,
-    provide(PLATFORM_DIRECTIVES, {useValue: [ROUTER_DIRECTIVES], multi: true})*/
-  ]
-);
+bootstrap(AppComponent, [
+  ROUTER_PROVIDERS,
+  {provide: LocationStrategy, useClass: PathLocationStrategy}
+]);
