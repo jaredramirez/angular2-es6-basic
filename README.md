@@ -6,4 +6,4 @@ A basic example project setting up an angular2 application with ES6, babel, and 
 
 Go to the project directory terminal.
 First, run `npm install` and `gulp`.
-Then run `http-server`, and navigate to [http://localhost:8080/app](http://localhost:8080/app).
+Then run `http-server`, and navigate to [http://localhost:8080/app/index.html](http://localhost:8080/app/index.html).
